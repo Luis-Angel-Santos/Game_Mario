@@ -57,19 +57,39 @@ h2{
 
 .box label:nth-child(1) i{
     background-image: url('/assets/img/01.jpg');
-    animation: animate 0.5s linear infinite;
+    animation: animate 0.5s steps(3) infinite;
 }
 
 .box label:nth-child(2) i{
     background-image: url('/assets/img/02.jpg');
-    animation: animate 0.5s linear infinite;
+    animation: animate 0.4s steps(3) infinite;
 
 }
 
 .box label:nth-child(3) i{
     background-image: url('/assets/img/03.jpg');
-    animation: animate 0.5s linear infinite;
+    animation: animate 0.7s steps(3) infinite;
 }
+
+.box label input:checked ~ i{
+    animation-play-state: paused;
+}
+
+.reset{
+    margin-top: 40px;
+    border: none;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+}
+
+.reset:active{
+    background-color: #d63c3c;
+    transform: scale(0.95);
+}
+
+
 
 @keyframes animate{
     0%{
