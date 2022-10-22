@@ -40,3 +40,42 @@ h2{
     border: 2px solid #555;
     border-bottom: none;
 }
+
+.box label input{
+    position: relative;
+    z-index: 10;
+}
+
+.box label i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 600px;
+}
+
+.box label:nth-child(1) i{
+    background-image: url('/assets/img/01.jpg');
+    animation: animate 0.5s linear infinite;
+}
+
+.box label:nth-child(2) i{
+    background-image: url('/assets/img/02.jpg');
+    animation: animate 0.5s linear infinite;
+
+}
+
+.box label:nth-child(3) i{
+    background-image: url('/assets/img/03.jpg');
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 600px;
+    }
+}
