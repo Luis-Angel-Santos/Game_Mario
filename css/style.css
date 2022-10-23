@@ -11,6 +11,8 @@
 
 body{
     display: flex;
+    background-image: url('/assets/img/fondo.png');
+    background-size: cover;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -18,12 +20,13 @@ body{
 }
 
 h2{
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 20px #000;
 }
 
 .box{
-    position: relative;
     width: 600px;
     height: 200px; 
     border-bottom: 2px solid #555;
@@ -83,6 +86,12 @@ h2{
     padding: 10px 25px;
     background: #333;
     color: #fff;
+    border-radius: 10px;
+    box-shadow: 6px 5px 20px black;
+}
+
+.reset:hover{
+    background-color: #d63c2c;
 }
 
 .reset:active{
@@ -90,7 +99,18 @@ h2{
     transform: scale(0.95);
 }
 
+/* Cuando la pantalla es menor a 400px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width : 550px) {
+    .box{
+        width: 300px;
+        height: 100px; 
+    }
 
+    .box label i{
+        background-size: 300px;
+    }
+
+}
 
 @keyframes animate{
     0%{
