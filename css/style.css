@@ -43,6 +43,7 @@ h2{
 
 .box label input{
     position: relative;
+    appearance: none;
     z-index: 10;
 }
 
