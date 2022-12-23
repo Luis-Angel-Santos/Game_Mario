@@ -6,6 +6,6 @@ Minijuego de Mario desarrollado con:
 - CSS
 - JS
 
-# Probar el juego
+## Probar el juego
 
-Puede ver el resultado aquí: https://mariogame-js.netlify.app/
+Puede ver el resultado aquí: [Mario Games](https://mariogame-js.netlify.app/)
